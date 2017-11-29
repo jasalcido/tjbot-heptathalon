@@ -11,4 +11,4 @@ Exercise tjbotlib and hardware components to do 7 things:
 # Hardware
 This recipe requires a tjbot with a LED, microphone, speaker, camera and servo
 
-#Build and Run
+# Build and Run
