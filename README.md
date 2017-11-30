@@ -8,7 +8,7 @@ Exercise tjbotlib and hardware to do 7 things:
 6) Visually recognize objects in a photo using tj.see();
 7) Read News headlines using Watson Discovery;
 
-Leverages IBM [Watson Cognitive Services](https://www.ibm.com/watson/developercloud/doc/index.html) Conversation, Text to Speech, Speech to Text, Language Translator, Discovery, Tone Analyzer and Visual Recognition.
+Leverages IBM [Watson Cognitive Services](https://www.ibm.com/watson/developercloud/doc/index.html) including - Conversation, Text to Speech, Speech to Text, Language Translator, Discovery, Tone Analyzer and Visual Recognition.
 
 # Hardware
 This recipe requires a tjbot with a LED, microphone, speaker, camera and servo
