@@ -8,9 +8,12 @@ Exercise tjbotlib and hardware to do 7 things:
 6) Visually recognize objects in a photo using tj.see();
 7) Read News headlines using Watson Discovery;
 
-Leverages IBM Cognitive Services [Watson Conversation](https://console.bluemix.net/docs/services/conversation/getting-started.html#gettingstarted), Watson Text to Speech, Watson Speech to Text, Watson Language Translator, Watson Discovery, Watson Tone Analyzer and Watson Visual Recognition
+Leverages IBM [Watson Cognitive Services](https://www.ibm.com/watson/developercloud/doc/index.html) Conversation, Text to Speech, Speech to Text, Language Translator, Discovery, Tone Analyzer and Visual Recognition.
 
 # Hardware
 This recipe requires a tjbot with a LED, microphone, speaker, camera and servo
+
+# Notice
+I am a total newb, and have likely violated every Coding, Git and Node convention.  But please don't throw any shame or my bot's LED might pulse blue!
 
 # Build and Run
