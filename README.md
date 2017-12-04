@@ -10,6 +10,8 @@ Exercise tjbotlib and hardware to do 7 things:
 
 Leverages IBM [Watson Cognitive Services](https://www.ibm.com/watson/developercloud/doc/index.html) including - Conversation, Text to Speech, Speech to Text, Language Translator, Discovery, Tone Analyzer and Visual Recognition.
 
+See the video here: https://youtu.be/bLqGqhc3cRA
+
 # Hardware
 This recipe requires a tjbot with a LED, microphone, speaker, camera and servo
 
