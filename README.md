@@ -27,7 +27,7 @@ Since you are here, you have likely already worked with the three initial recipe
 In addition to the Watson Conversation, Speech to Text, and Text to Speech services, this recipe also leveraged code from the [Make Your Robot Respond to Emotions Using Watson](https://github.com/ibmtjbot/tjbot/tree/master/recipes/sentiment_analysis) recipe for Tone Analysis logic, the [Use Your Voice to Control a Light with Watson](https://github.com/ibmtjbot/tjbot/tree/master/recipes/speech_to_text) recipe for LED logic (I prefer pulse to shine, beware of deprecation), and the [TJVision by Victor Dibia](https://github.com/victordibia/tjvision) featured recipe for visual recognition logic.
 
 Here are the essential steps:
- 1) Create instances of the following Watson Cognitive Services on the IBM Cloud:
+ 1) Create (or reuse) instances of the following Watson Cognitive Services on the IBM Cloud:
     -- Conversation
     -- Speech to Text
     -- Text to Speech
@@ -35,10 +35,10 @@ Here are the essential steps:
     -- Visual Recognition
     -- Language Translator
  2) Import the tjbot-heptathalon-workspace.json into the Conversation Service
- 3) Edit the config.js file with the credentials for each service.  Pay particular attention to the differences with the Conversation Service (also need the workspace id) and the Visual Recognition Service (api_key instead of username/password set)
- 4) Create an instance of the Watson Discovery Service on the IBM Cloud
+ 3) Edit the config.default.js file with the credentials for each service.  Pay particular attention to the differences with the Conversation Service (also need the workspace id) and the Visual Recognition Service (api_key instead of username/password set)
+ 4) Create (or reuse) an instance of the Watson Discovery Service on the IBM Cloud.  
  5) Edit the tjbot-heptathalon.js code with the credentials for the Watson Discovery service.  Hints in the code comments where to look.
- 6) Copy the tjbot-heptathalon.js and config.js files into the Watson recipe directory of your choice.  My strong recommendation is under the directory for the Conversation recipe.
+ 6) Copy the tjbot-heptathalon.js and config.default.js files into the Watson recipe directory of your choice.  My strong recommendation is under the directory for the Conversation recipe.  Rename config.default.js to config.js, taking care not to overwrite an existing, useful config.js
  
  You should now be ready to go!!  Use the TJBot Heptathalon Script 1Dec2017.docx for some ideas on how to setup and execute this recipe.  Use the TJBot Visual Recognition Flash Cards.docx to print out some flashcards for use with the Visual Recognition Service.
  
