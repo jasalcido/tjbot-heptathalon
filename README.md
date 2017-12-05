@@ -1,4 +1,5 @@
-# tjbot-heptathalon
+# TJBot Heptathalon
+
 Exercise tjbotlib and hardware to do 7 things:
 1) Use tj.converse() and tj.speak() to engage in a conversation and recognize intents;
 2) Show empathy via voice transformations for the Allison voice and tj.speak();
@@ -50,3 +51,5 @@ Here are the essential steps:
  $ aplay ??? need to update
 
 My first catchword was TJ, which caused two problems:  Too many times TJBot heard DJ or Teacher.  And the J sound is problematic for non-native English speakers.
+
+The Watson API Explorer, link in the Useful Bookmarks.html file, was essential for me to learn and program the Watson Discovery Service.
