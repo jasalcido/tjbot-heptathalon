@@ -46,7 +46,9 @@ Here are the essential steps:
  
  I cannot overemphasize how much simpler things were for me after adding a USB Sound Card with attached microphone and speaker.
  
- It was helpful to test the camera, speaker and mic before constructing the TJBot and bringing it to life.  Use the testcamera.py python script and the embedded Raspberry Pi Python capabilities for the camera.  For the microphone and speaker, the following commands were helpful.  Keep in mind the syntax, particularly the plughw:1,0 setting, will depend on your TJBot hardware.
+ It was helpful to test the camera, speaker and mic before constructing the TJBot and bringing it to life.  Use the testcamera.py script and the embedded Raspberry Pi Python capabilities for the camera.  
+
+For the microphone and speaker, the following commands were helpful.  Keep in mind the syntax, particularly the plughw:1,0 setting, will depend on your TJBot hardware.  These worked with my usb sound card with mic and speakers connected to the usb sound card with standard 3.5mm jacks.
 $ arecord --device=plughw:1,0 --format cd mictest.wav -V mono
 $ aplay --device=plughw:1,0 mictest.wav
 
