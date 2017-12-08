@@ -59,3 +59,7 @@ The Watson API Explorer (see link in the Useful Bookmarks.html file), was essent
 At the time of my recipe, the voice transformations were only available for the Allison voice.
 
 I had many issues with controlling the sequencing of TJBot responses until stumbling upon the .then clause for certain tjbotlib functions.  You can see this in the tjbot.heptathalon.js code when responding to the move_arm and Transform intents.
+
+# In Case of Emergency
+
+![](https://https://github.com/mauer15317/tjbot-heptathalon/blob/master/Fraley's%20Robot%20Repair.JPG)
