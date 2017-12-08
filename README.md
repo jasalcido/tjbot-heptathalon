@@ -62,4 +62,4 @@ I had many issues with controlling the sequencing of TJBot responses until stumb
 
 # In Case of Emergency
 
-![](https://https://github.com/mauer15317/tjbot-heptathalon/blob/master/Fraley's%20Robot%20Repair.JPG)
+Click [here](https://https://github.com/mauer15317/tjbot-heptathalon/blob/master/Fraley's%20Robot%20Repair.JPG)
