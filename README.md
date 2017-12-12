@@ -28,13 +28,13 @@ In addition to the Watson Conversation, Speech to Text, and Text to Speech servi
 
 Here are the essential steps:
   1. Create (or reuse) instances of the following Watson Cognitive Services on the IBM Cloud:
-    i. Conversation
-    ii. Speech to Text
-    iii. Text to Speech
-    iv. Tone Analyzer
-    v. Visual Recognition
-    vi. Language Translator
-  2. Import the tjbot-heptathalon-workspace.json into the Conversation Service
+    * Conversation
+    * Speech to Text
+    * Text to Speech
+    * Tone Analyzer
+    * Visual Recognition
+    * Language Translator
+  2. Import the tjbot-heptathalon-workspace.json into the Conversation Service created above
   3. Edit the config.default.js file with the credentials for each service.  Pay particular attention to the differences with the Conversation Service (also need the workspace id) and the Visual Recognition Service (api_key instead of username/password set)
   4. Create (or reuse) an instance of the Watson Discovery Service on the IBM Cloud.  
   5. Edit the tjbot-heptathalon.js code with the credentials for the Watson Discovery service.  Hints in the code comments where to look.
