@@ -65,3 +65,4 @@ I had many issues with controlling the sequencing of TJBot responses until stumb
 Click [here](https://github.com/mauer15317/tjbot-heptathalon/blob/master/Fraley's%20Robot%20Repair.JPG)
 
 <img src="Fraley's Robot Repair.jpg" width="85%">
+<img src="Fraley's%20Robot%20Repair.JPG" width="85%">
