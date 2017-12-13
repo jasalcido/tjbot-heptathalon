@@ -25,15 +25,15 @@ var spoken_result = '';
 var intent_confidence_threshhold = .425;
 
 // ** this section for Watson Discovery service
-var DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
-var tjbot_environment = '219b3a0d-5b5b-4a43-890a-4bd0628cfc4a';  // *** from your Watson Discovery News Collection
-var tjbot_collection = '8ee2cbea-06a8-4a84-a85e-8cdcc17802c3';  // *** from your Watson Discovery News Collection
-var tjbot_configuration = 'f9bb44c4-4174-4ea3-9b3f-923824223db3';  // *** from your Watson Discovery News Collection
+var DiscoveryV1 = require('watson-developer-cloud/discovery/v1');  // *** confirm
+var tjbot_environment = '';  // *** from your Watson Discovery News Collection
+var tjbot_collection = '';  // *** from your Watson Discovery News Collection
+var tjbot_configuration = '';  // *** from your Watson Discovery News Collection
 var discovery = new DiscoveryV1({
-  username: "4e71ccf3-96b4-40a4-8ed6-8b4550d25afd",  // *** from your Watson Discovery service
-  password: "zCjsYl1tNkzc",  // *** from your Watson Discovery service
-  version: 'v1',
-  version_date: '2016-12-01' // *** the version referenced by default in Watson API Explorer
+  username: "",  // *** from your Watson Discovery service
+  password: "",  // *** from your Watson Discovery service
+  version: 'v1',  // *** confirm
+  version_date: '2016-12-01' // *** confirm, the version referenced by default in Watson API Explorer
 });
 var news_query = '';
 var short_title = '';
@@ -100,7 +100,7 @@ tj.listen(function(msg) {  // ** listen for utterances with our catchword and se
                 }
             });
         }); // ** end Analyze Tone
-       
+
         tj.converse(WORKSPACEID, turn, function(response) {          // ** send the message to the conversation service
             console.log(JSON.stringify(response, null, 2));  // ** log response object to console
             if (response.object.intents.length > 0 && response.object.intents[0].confidence > intent_confidence_threshhold) {              // ** check for intents with further action before going on
@@ -146,7 +146,7 @@ tj.listen(function(msg) {  // ** listen for utterances with our catchword and se
 						return tj.wave();
 	                 });
                  }  // ** end move_arm Intent
-                 
+
 				 // ** translate if intent is Languages
                  if (response.object.intents[0].intent == "Languages") {
 					tj.translate("I can also speak French and other languages", 'en', 'fr').then(function(translation) {
@@ -163,22 +163,22 @@ tj.listen(function(msg) {  // ** listen for utterances with our catchword and se
 						}).then(function() {
 						begin_transform = '<express-as type="Apology">';
 						end_transform = '</express-as>';
-						spoken_result = begin_transform + 'I am sorry' + end_transform;		
+						spoken_result = begin_transform + 'I am sorry' + end_transform;
 						return tj.speak(spoken_result);
 					 }).then(function() {
 						return tj.speak('This is a more youthful voice');
 						}).then(function() {
 						begin_transform = '<voice-transformation type="Young" strength="80%">';
 						end_transform = '</voice-transformation>';
-						spoken_result = begin_transform + 'This is a more youthful voice' + end_transform;		
+						spoken_result = begin_transform + 'This is a more youthful voice' + end_transform;
 						return tj.speak(spoken_result);
 					 }).then(function() {
 						return tj.speak('That is very exciting.  I am happy for you');
 						}).then(function() {
 						begin_transform = '<express-as type="GoodNews">';
 						end_transform = '</express-as>';
-						spoken_result = begin_transform + 'That is very exciting.  I am happy for you.' + end_transform;		
-						return tj.speak(spoken_result);		
+						spoken_result = begin_transform + 'That is very exciting.  I am happy for you.' + end_transform;
+						return tj.speak(spoken_result);
 					 });
 				 }  // ** end Transform Intent
 
@@ -190,11 +190,11 @@ tj.listen(function(msg) {  // ** listen for utterances with our catchword and se
 						tj.speak(spoken_result);
 					});
 				  }  // ** end see Intent
-				 
+
 		     }  else {  // ** didn't recognize intent
 					begin_transform = '<express-as type="Apology">';
 					end_transform = '</express-as>';
-					spoken_result = begin_transform + 'Sorry, I did not recognize your intent.' + end_transform;		
+					spoken_result = begin_transform + 'Sorry, I did not recognize your intent.' + end_transform;
 					tj.speak(spoken_result);
 			 }  // ** End Intent Check
         });  // ** End Converse
