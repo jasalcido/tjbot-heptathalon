@@ -1,5 +1,7 @@
 # TJBot Heptathalon
 
+<img src="TJBot%20with%20Tokyo%20Bib.png" width="85%">
+
 Exercise tjbotlib and hardware to do 7 things:
   1. Use tj.converse() and tj.speak() to engage in a conversation and recognize intents;
   2. Show empathy via voice transformations for the Allison voice and tj.speak();
